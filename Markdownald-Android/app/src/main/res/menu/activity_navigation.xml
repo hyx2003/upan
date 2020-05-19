@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_sidebar">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_register"
+            android:icon="@drawable/ic_action_login"
+            android:title="@string/all_register" />
+        <item
+            android:id="@+id/menu_login"
+            android:icon="@drawable/ic_action_register"
+            android:title="@string/all_login" />
+        <item
+            android:id="@+id/menu_logout"
+            android:icon="@drawable/ic_baseline_exit_white"
+            android:title="@string/all_logout" />
+        <item
+            android:id="@+id/menu_tutorial"
+            android:icon="@drawable/ic_action_tutorial"
+            android:title="@string/all_tutorial" />
+        <item
+            android:id="@+id/menu_about"
+            android:icon="@drawable/ic_action_about"
+            android:title="@string/all_about" />
+    </group>
+</menu>

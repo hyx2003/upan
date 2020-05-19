@@ -1,0 +1,215 @@
+# Markdown Tutorial
+
+##  1.Title
+
+The format of the title is divided into two types. The first is to use = and - to mark first and second titles .The grammatical format = and - is marked as follows:
+
+I'm presenting a first level title.
+=================
+I'm presenting a second level title.
+-----------------
+
+The second method is to use the # mark. The use of # can indicate the level 1-6 title:
+
+## first level title
+## second level title
+### third level title
+#### fourth level title
+##### fifth level title
+###### sixth level title
+
+## 2.Paragraph
+
+### Highlight/Quote:
+
+Markdown paragraph has no special format, just write the text directly. The new line of the paragraph is to use more than two spaces plus carriage return. Another common requirement is that we may want to emphasize/quote a paragraph of text. Markdown provides a special symbol > for this:
+
+The display effect is as follows:
+
+> This text will be highlighted
+
+### Inline Characters:
+
+Markdown can use the following characters :
+
+*Italic text*
+_Italic text_
+**Defines bold text**
+__Defines bold text__
+***Bold italic text***
+___Bold italic text___
+
+### Divider Line:
+
+You can use more than three asterisks, minus signs, and baselines in a line to create a dividing line. There is nothing else in the line. You can also insert spaces between asterisks or minus signs. Each of the following can be separated:
+
+***
+* * *
+*****
+- - -
+### Strike out:
+
+If you want to strike out lines to the text in a paragraph, you only need to add two wave lines at both ends of the text. Examples is as follows:
+
+~~Text to be deleted~~
+
+### Underline:
+
+Underlines can be achieved by HTML's `<u>` tag:
+
+<u>Underline text</u>
+
+### Footnotes:
+
+Footnotes is a supplementary note to the text.
+
+Create a footnote format similar to this：
+
+ [^Text to be noted]
+
+## 3.List
+
+Markdown supports ordered and unordered lists.
+
+### Unordered lists:
+
+Unordered lists are marked with asterisks (*), plus (+), or minus (-):
+The results are as follows:
+
+* First item list
+* Second item list
+* Third item list
+
++ First item list
++ Second item list
++ Third item list
+
+- First item list
+
+- Second item list
+
+- Third item list
+
+### Ordered lists:
+
+Ordered lists are represented by numbers and. signs, such as:
+
+1. First item list
+2. Second item list
+3. Third item list
+
+### List nesting:
+
+List nesting requires only four spaces to be added to the options in the sub-list:
+
+The results are as follows:
+
+1. First item：
+    - The first element nested in the first item
+    - The second element nested in the first item
+2. Second item：
+    1. The first element nested in the second item
+    2. The second element nested in the second item
+
+## 4.Block
+
+### Basic block:
+
+Markdown block reference uses the > symbol at the beginning of a paragraph, followed by a space symbol.
+
+The results are as follows:
+
+> the first line of the block
+>
+> the second line
+>
+> the third line
+
+In addition, blocks can be nested, one > symbol is the outermost layer, two > symbols are the first layer of nesting, and so on.
+
+> The outermost layer
+> > The first layer of nesting
+> >
+> > > The second layer of nesting
+
+### Use lists in blocks:
+
+Examples of using lists in blocks are as follows:
+
+> Use lists in blocks
+> 1. The first item
+> 2. The second item
+> + The first item
+> + The second item
+> + The third item
+
+## 5.Code
+
+If the code of a function or fragment on a paragraph can be enclosed with inversion marks (\`), for example:
+
+`printf()` inline code
+
+You can wrap a piece of code in ``and specify a language (or not):
+
+```javascript
+$(document).ready(function () {
+alert('Code');
+});
+```
+
+## 6.Link
+
+The links are used as follows:
+
+\[link name\](The address of the link)
+
+For example:
+
+This is the link of Baidu [Google](https://www.google.com/)
+
+Direct use of link address:
+
+<https://www.google.com>
+
+## 7.Picture
+
+The grammatical format of the Markdown picture is as follows:
+
+![]()
+
+Begin with an exclamation mark ( ! )
+
+Then there's a square bracket with the substitute text for the picture.
+
+Then there's an ordinary bracket with the address of the picture. Finally, you can use quotation marks to wrap and add the text with the selective'title'attribute.
+
+## 8.Form
+
+Markdown makes tables using | to separate different cells and - to separate table headers and other rows.
+
+The results are as follows:
+
+
+
+| Header | Header |
+| ------ | ------ |
+| Cell   | Cell   |
+| Cell   | Cell   |
+
+Align
+
+We can set the alignment of tables:
+
+ **-:**Set content and title bar aligned to the right.
+
+**:-** Set content and title bar aligned to the left.
+
+**:-:** Set the content to center with the title bar.
+
+The results are as follows:
+
+| Left alignment | Right alignment | Center alignment |
+| :------------- | --------------: | :--------------: |
+| Cell           |            Cell |       Cell       |
+| Cell           |            Cell |       Cell       |
+

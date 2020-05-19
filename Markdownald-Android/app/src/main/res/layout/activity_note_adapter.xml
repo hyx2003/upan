@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.guanaj.easyswipemenulibrary.EasySwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_swipe_menu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:contentView="@+id/view_content"
+    app:rightMenuView="@+id/view_right">
+
+    <RelativeLayout
+        android:id="@+id/view_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/image_notebook"
+            android:layout_width="55sp"
+            android:layout_height="55sp"
+            android:scaleType="fitStart"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:src="@drawable/ic_baseline_bookmark_grey" />
+
+        <LinearLayout
+            android:id="@+id/layout_note_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingLeft="40sp"
+                android:paddingTop="6dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/view_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorLightBlue"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingTop="20dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="20dp"
+            android:text="@string/main_more"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/text_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_red_light"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingTop="20dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="20dp"
+            android:text="@string/main_delete"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+</com.guanaj.easyswipemenulibrary.EasySwipeMenuLayout>

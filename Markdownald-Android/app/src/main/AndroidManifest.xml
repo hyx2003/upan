@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="group.j.android.markdownald">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.activity.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".base.BaseActivity" />
+        <activity
+            android:name=".ui.activity.NoteQRActivity"
+            android:label="@string/title_activity_node_qr"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.activity.NotebookRenameActivity" />
+        <activity android:name=".ui.activity.NoteRenameActivity" />
+        <activity android:name=".ui.activity.NoteMoveActivity" />
+        <activity android:name=".ui.activity.NotebookCreateActivity" />
+        <activity android:name=".ui.activity.NoteCreateActivity" />
+        <activity android:name=".ui.activity.NotePreviewActivity" />
+        <activity android:name=".ui.activity.NoteEditActivity" />
+        <activity android:name=".ui.activity.LoginActivity"/>
+        <activity android:name=".ui.activity.TutorialActivity"/>
+        <activity android:name=".ui.activity.AboutActivity"/>
+        <activity android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name=".ui.activity.ResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+    </application>
+
+</manifest>
