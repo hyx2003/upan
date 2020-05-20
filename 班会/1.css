@@ -6,10 +6,30 @@ body{
     position: absolute;
     top:301px;
     left:510px;
-    color:red;
+    color:black;
 }
 .kuang2{
     display: inline-block;
-    height:8000px;
+    height:800px;
     width:5000px;
+}
+.but{
+    display: inline-block;
+    width:100px;
+    height:100px;
+    position: absolute;
+    top:550px;
+    left:350px;
+    font-size: 40px;
+    color:rgba(14, 66, 207, 0.863);
+}
+.but2{
+    display: inline-block;
+    width:100px;
+    height:100px;
+    position: absolute;
+    top:550px;
+    left:600px;
+    font-size: 40px;
+    color:rgba(14, 66, 207, 0.863);
 }
