@@ -1,0 +1,13 @@
+body{
+    overflow-x:hidden;
+    margin:0;
+    padding:0;
+}
+.ti{
+    width: 3000px;
+    height:800px;
+    font-size: 65px;
+    position: absolute;
+    top:360px;
+    left:790px;
+}

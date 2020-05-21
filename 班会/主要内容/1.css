@@ -2,11 +2,12 @@ body{
     overflow: hidden;
 }
 .kuang{
-    font-size:123px;
+    font-size:30px;
     position: absolute;
-    top:301px;
-    left:510px;
+    top:151px;
+    left:730px;
     color:black;
+    letter-spacing: 4px;
 }
 .kuang2{
     display: inline-block;
@@ -29,7 +30,25 @@ body{
     height:100px;
     position: absolute;
     top:550px;
-    left:600px;
+    left:1300px;
     font-size: 40px;
     color:rgba(14, 66, 207, 0.863);
+}
+.but3{
+    display: inline-block;
+    width:100px;
+    height:100px;
+    position: absolute;
+    top:550px;
+    left:820px;
+    font-size: 40px;
+    color:rgba(14, 66, 207, 0.863);
+}
+.ti2{
+    font-size:30px;
+    position: absolute;
+    top:391px;
+    left:730px;
+    color:black;
+    letter-spacing: 4px;
 }
